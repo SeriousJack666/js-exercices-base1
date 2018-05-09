@@ -3,8 +3,22 @@
     <head>
         <title>Exercice_7</title>
         <meta charset="UTF-8">
+        <script type="text/javascript">
+        	function test_majorité (aged)
+        	{
+        		if (aged >= 18)
+        			alert('Vous êtes majeur.')
+        		else
+        			alert('Vous êtes mineur.')
+        	}
+
+        </script>
     </head>
     <body>
-
+    <form>
+    	<label for="âge">Age : </label>
+    	<input type="text" name="age" value="">
+    	<button id="valider" name="valider" onclick="test_majorité (age.value)">Valider</button>
+    </form>
     <body>
 </html>

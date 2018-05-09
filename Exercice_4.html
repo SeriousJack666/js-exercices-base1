@@ -5,6 +5,14 @@
         <meta charset="UTF-8">
     </head>
     <body>
-
+    	<form name=form2>
+		    <label for="nom">Nom : </label>
+		    <input type="text" name="nom" id="nom" value=""/>
+		    <label for="prenom">Prénom : </label>
+		    <input type="text" name="prenom" id="prenom" value=""/>
+		    <label for="ville">Ville : </label>
+		    <input type="text" name="ville" id="ville"  value=""/>
+		    <button  name="valider" id="valider" onclick="alert(nom.value+'\n'+prenom.value+'\n'+ville.value)">Valider</button>
+		</form>
     </body>
 </html>

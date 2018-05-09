@@ -3,8 +3,25 @@
 <head>
     <title>Exercice_8</title>
     <meta charset="UTF-8">
+    <script type="text/javascript">
+    	function calcul_savant(pointure, année_naissance)
+    	{
+    		var step1 = pointure * 2
+    		var step2 = step1 + 5
+    		var step3 = step2 * 50
+    		var step4 = step3 - année_naissance
+    		var résultat = step4 + 1766
+    		alert(résultat)
+    	}
+    </script>
 </head>
 <body>
-
+<form>
+	<label for="pointure">Pointure : </label>
+	<input type="text" name="pointure" value="">
+	<label for="Année de naissance">Année de naissance : </label>
+	<input type="text" name="année_naissance" value="">
+	<button id="valider" name="valider" onclick="calcul_savant (pointure.value, année_naissance.value)"></button>
+</form>
 </body>
 </html>
